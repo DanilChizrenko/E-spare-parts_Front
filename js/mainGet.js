@@ -43,10 +43,10 @@ function GetCategory(name){
     });
 }
 
-function GetManufacturer(){
+function GetManufacturer(name){
     $(document).ready(function(){
         $.ajax({
-            url: "http://127.0.0.1:8000/api/showManufacturers",
+            url: "http://127.0.0.1:8000/api/showManufacturers?name=" + name,
             dataType: "json"
         }).done(function(response){
             let manufacturerDiv =  $("#manufacturers");
