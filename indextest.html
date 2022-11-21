@@ -27,56 +27,160 @@
 
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            All Brands
+            All Models
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><button class="dropdown-item" onclick="GetBrands('porsche')" type="button">porsche</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('bmw')" type="button">bmw</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('mercedes')" type="button">mercedes</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('toyota')" type="button">toyota</button></li>
+            <li><button class="dropdown-item" onclick="GetModels('1')" type="button">porscheModel</button></li>
+            <li><button class="dropdown-item" onclick="GetModels('2')" type="button">bmwModel</button></li>
+            <li><button class="dropdown-item" onclick="GetModels('3')" type="button">mercedesModel</button></li>
+            <li><button class="dropdown-item" onclick="GetModels('4')" type="button">toyotaModel</button></li>
           </ul>
         </div>
 
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            All Brands
+            All Category
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><button class="dropdown-item" onclick="GetBrands('porsche')" type="button">porsche</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('bmw')" type="button">bmw</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('mercedes')" type="button">mercedes</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('toyota')" type="button">toyota</button></li>
+            <li><button class="dropdown-item" onclick="GetCategory('engine')" type="button">engine</button></li>
+            <li><button class="dropdown-item" onclick="GetCategory('transmission')" type="button">transmission</button></li>
+            <li><button class="dropdown-item" onclick="GetCategory('carcase')" type="button">carcase</button></li>
+            <li><button class="dropdown-item" onclick="GetCategory('salon')" type="button">salon</button></li>
           </ul>
         </div>
 
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            All Brands
+            All Manufacturer
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><button class="dropdown-item" onclick="GetBrands('porsche')" type="button">porsche</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('bmw')" type="button">bmw</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('mercedes')" type="button">mercedes</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('toyota')" type="button">toyota</button></li>
+            <li><button class="dropdown-item" onclick="GetManufacturer('bosch')" type="button">bosch</button></li>
+            <li><button class="dropdown-item" onclick="GetManufacturer('lemforder')" type="button">lemforder</button></li>
+            <li><button class="dropdown-item" onclick="GetManufacturer('zf')" type="button">zf</button></li>
+            <li><button class="dropdown-item" onclick="GetManufacturer('victoreinc')" type="button">victoreinc</button></li>
           </ul>
         </div>
 
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            All Brands
+            All SpareParts
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><button class="dropdown-item" onclick="GetBrands('porsche')" type="button">porsche</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('bmw')" type="button">bmw</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('mercedes')" type="button">mercedes</button></li>
-            <li><button class="dropdown-item" onclick="GetBrands('toyota')" type="button">toyota</button></li>
+            <li><button class="dropdown-item" onclick="GetSparepart('1')" type="button">boschDetail</button></li>
+            <li><button class="dropdown-item" onclick="GetSparepart('2')" type="button">lemforderDetail</button></li>
+            <li><button class="dropdown-item" onclick="GetSparepart('3')" type="button">zfDetail</button></li>
+            <li><button class="dropdown-item" onclick="GetSparepart('4')" type="button">victoreincDetail</button></li>
           </ul>
         </div>
       </div>
     </div>
 
-
-
+    <div class="styleDiv">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Create Brand
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="brandcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Create Models
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="modelcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="typefuel">Typefuel</label>
+                  <input type="text" class="form-control" id="typefuel" placeholder="typefuel">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="year">Year</label>
+                  <input type="text" class="form-control" id="year" placeholder="year">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="brand_id">Brand</label>
+                  <input type="text" class="form-control" id="brand_id" placeholder="brand_id">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Create Category
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="brandcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Create Manufacturer
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="brandcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Create SpareParts
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="brandcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="stylebtn">
@@ -86,6 +190,9 @@
     </div>
 
     <script src="js/mainGet.js"></script>
+    <script src="js/mainPost.js"></script>
+    <script src="js/mainPut.js"></script>
+    <script src="js/mainDelete.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
