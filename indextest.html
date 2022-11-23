@@ -87,16 +87,17 @@
             <div class="accordion-body">
               <form class="brandcreate">
                 <div class="col-sm-3 mb-3">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="name">
+                  <label for="nameBrand">Name</label>
+                  <input type="text" class="form-control" id="nameBrand" placeholder="name">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+          <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               Create Models
             </button>
@@ -105,8 +106,8 @@
             <div class="accordion-body">
               <form class="modelcreate">
                 <div class="col-sm-3 mb-3">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="name">
+                  <label for="nameModel">Name</label>
+                  <input type="text" class="form-control" id="nameModel" placeholder="name">
                 </div>
                 <div class="col-sm-3 mb-3">
                   <label for="typefuel">Typefuel</label>
@@ -117,7 +118,7 @@
                   <input type="text" class="form-control" id="year" placeholder="year">
                 </div>
                 <div class="col-sm-3 mb-3">
-                  <label for="brand_id">Brand</label>
+                  <label for="brand_id">BrandId</label>
                   <input type="text" class="form-control" id="brand_id" placeholder="brand_id">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -125,54 +126,65 @@
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
               Create Category
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <form class="brandcreate">
+              <form class="categorycreate">
                 <div class="col-sm-3 mb-3">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="name">
+                  <label for="nameCategory">Name</label>
+                  <input type="text" class="form-control" id="nameCategory" placeholder="name">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
               Create Manufacturer
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <form class="brandcreate">
+              <form class="manufacturercreate">
                 <div class="col-sm-3 mb-3">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="name">
+                  <label for="nameManufacturer">Name</label>
+                  <input type="text" class="form-control" id="nameManufacturer" placeholder="name">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
               Create SpareParts
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <form class="brandcreate">
+              <form class="sparepartcreate">
                 <div class="col-sm-3 mb-3">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="name">
+                  <label for="nameSparepart">Name</label>
+                  <input type="text" class="form-control" id="nameSparepart" placeholder="name">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="category_id">CategoryId</label>
+                  <input type="text" class="form-control" id="category_id" placeholder="category_id">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="manufacturer_id">ManufacturerId</label>
+                  <input type="text" class="form-control" id="manufacturer_id" placeholder="manufacturer_id">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
@@ -182,6 +194,124 @@
       </div>
     </div>
 
+    <div class="styleDiv">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Create Brand
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="brandcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="nameBrand">Name</label>
+                  <input type="text" class="form-control" id="nameBrand" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Create Models
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="modelcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="nameModel">Name</label>
+                  <input type="text" class="form-control" id="nameModel" placeholder="name">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="typefuel">Typefuel</label>
+                  <input type="text" class="form-control" id="typefuel" placeholder="typefuel">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="year">Year</label>
+                  <input type="text" class="form-control" id="year" placeholder="year">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="brand_id">BrandId</label>
+                  <input type="text" class="form-control" id="brand_id" placeholder="brand_id">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              Create Category
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="categorycreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="nameCategory">Name</label>
+                  <input type="text" class="form-control" id="nameCategory" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Create Manufacturer
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="manufacturercreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="nameManufacturer">Name</label>
+                  <input type="text" class="form-control" id="nameManufacturer" placeholder="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              Create SpareParts
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form class="sparepartcreate">
+                <div class="col-sm-3 mb-3">
+                  <label for="nameSparepart">Name</label>
+                  <input type="text" class="form-control" id="nameSparepart" placeholder="name">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="category_id">CategoryId</label>
+                  <input type="text" class="form-control" id="category_id" placeholder="category_id">
+                </div>
+                <div class="col-sm-3 mb-3">
+                  <label for="manufacturer_id">ManufacturerId</label>
+                  <input type="text" class="form-control" id="manufacturer_id" placeholder="manufacturer_id">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="stylebtn">
       <div class="btn-group">

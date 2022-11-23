@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".brandcreate").submit(function (event){
         var formData = {
-            name: $("#name").val(),
+            name: $("#nameBrand").val(),
         };
         $.ajax({
             type: "POST",
@@ -19,10 +19,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".modelcreate").submit(function (event){
         var formData = {
-            name: $("#name").val(),
-            typefuel: $("typefuel").val(),
-            year: $("year").val(),
-            brand_id: $("brand_id").val(),
+            name: $("#nameModel").val(),
+            typefuel: $("#typefuel").val(),
+            year: $("#year").val(),
+            brand_id: $("#brand_id").val(),
         };
         $.ajax({
             type: "POST",
@@ -40,11 +40,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".categorycreate").submit(function (event){
         var formData = {
-            name: $("#name").val(),
+            name: $("#nameCategory").val(),
         };
         $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:8000/api/createBrand",
+            url: "http://127.0.0.1:8000/api/createCategory",
             data: formData,
             dataType: "json",
             encode: true,
@@ -58,11 +58,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".manufacturercreate").submit(function (event){
         var formData = {
-            name: $("#name").val(),
+            name: $("#nameManufacturer").val(),
         };
         $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:8000/api/createBrand",
+            url: "http://127.0.0.1:8000/api/createManufacturer",
             data: formData,
             dataType: "json",
             encode: true,
@@ -76,11 +76,13 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".sparepartcreate").submit(function (event){
         var formData = {
-            name: $("#name").val(),
+            name: $("#nameSparepart").val(),
+            category_id: $("#category_id").val(),
+            manufacturer_id: $("#manufacturer_id").val(),
         };
         $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:8000/api/createBrand",
+            url: "http://127.0.0.1:8000/api/createSparePart",
             data: formData,
             dataType: "json",
             encode: true,
